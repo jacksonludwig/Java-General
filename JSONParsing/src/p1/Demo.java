@@ -14,6 +14,9 @@ public class Demo {
         JSONObject data = (JSONObject) myJSONParser.parseJSON().get("response");
 
         JSONArray jsonArray = (JSONArray) data.get("items");
-        System.out.println(jsonArray.get(0));
+        JSONObject firstElement = (JSONObject) jsonArray.get(0);
+        String idString = String.valueOf(firstElement.get("id"));
+
+        System.out.println(idString);
     }
 }
