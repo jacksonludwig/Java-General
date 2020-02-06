@@ -1,0 +1,37 @@
+{
+  "response": {
+    "count": 10307,
+    "items": [
+      {
+        "id": 176514,
+        "from_id": -114200945,
+        "owner_id": -114200945,
+        "date": 1506629224,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "-я с разбитым сердцем сука,но я всё равно влюблённый.",
+        "post_source": {
+          "type": "api"
+        },
+        "comments": {
+          "count": 1,
+          "groups_can_post": true,
+          "can_post": 1
+        },
+        "likes": {
+          "count": 103,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 3,
+          "user_reposted": 0
+        },
+        "views": {
+          "count": 1022
+        }
+      }
+    ]
+  }
+}
