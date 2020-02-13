@@ -11,8 +11,9 @@ import java.io.FileNotFoundException;
 
 public class Demo {
     public static void main(String[] args) throws FileNotFoundException, ParseException {
-        MyJSONParser myJSONParser = new MyJSONParser(new File("/home/jackson/Java-General/JSONParsing/src/p1/example.json"));
-        JSONObject data = (JSONObject) myJSONParser.parseJSON().get("response");
+        File jsonFile = new File("src/p1/example.json");
+
+        JSONObject data = (JSONObject) MyJSONParser.parseJSON(jsonFile).get("response");
 
         JSONArray jsonArray = (JSONArray) data.get("items");
         JSONObject firstElement = (JSONObject) jsonArray.get(0);
