@@ -8,7 +8,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public abstract class MyJSONParser {
+public final abstract class MyJSONParser {
 
     private static String readJSONFile(File jsonFile) throws FileNotFoundException {
         Scanner file = new Scanner(jsonFile);
