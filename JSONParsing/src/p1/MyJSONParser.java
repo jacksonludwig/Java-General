@@ -9,7 +9,10 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public abstract class MyJSONParser {
-
+    private MyJsonParser() {
+        throw new IllegalStateException("Don't instantiate"); 
+    }
+        
     private static String readJSONFile(File jsonFile) throws FileNotFoundException {
         Scanner file = new Scanner(jsonFile);
         StringBuilder JSONString = new StringBuilder();
