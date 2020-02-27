@@ -8,7 +8,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public abstract class MyJSONParser {
+public final class MyJSONParser {
     private MyJsonParser() {
         throw new IllegalStateException("Don't instantiate"); 
     }
